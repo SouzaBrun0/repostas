@@ -4,7 +4,6 @@ def is_fibonacci(num):
         a, b = b, a + b
     return b == num or num == 0
 
-# Exemplo de uso
 numero = int(input("Informe um número: "))
 if is_fibonacci(numero):
     print(f"O número {numero} pertence à sequência de Fibonacci.")

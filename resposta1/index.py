@@ -6,4 +6,4 @@ while K < INDICE:
     K += 1
     SOMA += K
 
-print(SOMA)  # A saída será 91
+print(SOMA) 

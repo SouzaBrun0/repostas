@@ -1,10 +1,8 @@
 import json
 
-# Carregar os dados de faturamento a partir de um arquivo JSON
-with open('faturamento.json', 'r') as file:
+with open('C:/Users/bruno/OneDrive/Documentos/GitHub/repostas/resposta3/faturamento.json', 'r') as file:
     data = json.load(file)
 
-# Extrair os valores de faturamento, ignorando dias sem faturamento (valor 0)
 faturamento = [dia['valor'] for dia in data['faturamento'] if dia['valor'] > 0]
 
 menor_valor = min(faturamento)
